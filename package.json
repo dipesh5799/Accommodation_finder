@@ -1,0 +1,17 @@
+{
+  "name": "accommodation-finder",
+  "version": "1.0.0",
+  "description": "Full stack accommodation finder application",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend/clientapp && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend/clientapp && npm install"
+  },
+  "author": "dipesh",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
+
